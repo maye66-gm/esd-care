@@ -64,8 +64,12 @@ summary::after{content:"+";position:absolute;right:2px;top:7px;font-size:20px;fo
 details[open] summary::after{content:"–"}
 details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3d3d3d}
 .contact{margin:14px 0;padding:15px 16px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
-.contact b{display:block;font-size:15px;margin:0 0 6px;color:#111}
-.contact p{margin:6px 0;font-size:14.5px;line-height:1.9;color:#3d3d3d}
+.contact .contact-h{display:block;font-size:15px;font-weight:800;margin:0 0 8px;color:#111}
+.contact p{margin:7px 0;font-size:14.5px;line-height:1.9;color:#3d3d3d}
+.contact p b{font-weight:700;color:#111}
+.contact a{color:#111;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.card.danger a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.alert a{color:#111;font-weight:700;text-decoration:underline;text-underline-offset:2px}
 </style>
 </head>
 <body>
@@ -81,7 +85,7 @@ details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3d3d3d}
 <main class="wrap">
 
   <section class="alert">
-    <b>出现以下任一情况，请立即联系医院或前往急诊</b>
+    <b>出现以下任一情况，请立即联系医院（24 小时电话 <a href="tel:01087787701">010-8778-7701</a>）或前往急诊</b>
     <p>呕血 / 黑便 / 大量鲜血便 · 头晕心慌、面色苍白、出冷汗 · 腹痛或胸痛持续加重 · 持续高热寒战 · 反复呕吐不能进水</p>
   </section>
 
@@ -151,7 +155,7 @@ details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3d3d3d}
 
   <section class="card danger">
     <h2><span class="num">四</span>必须立即就医的情况</h2>
-    <p class="note">出现以下任何情况，应立即联系医院或前往急诊：</p>
+    <p class="note">出现以下任何情况，应立即联系医院（24 小时紧急电话 <a href="tel:01087787701">010-8778-7701</a>）或前往急诊：</p>
     <label class="item"><input type="checkbox"><span>呕血、黑便或持续鲜红色便血；</span></label>
     <label class="item"><input type="checkbox"><span>头晕、心慌、面色苍白、出冷汗或接近晕厥；</span></label>
     <label class="item"><input type="checkbox"><span>腹痛或胸痛持续加重，伴腹胀、板状腹；</span></label>
@@ -229,10 +233,11 @@ details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3d3d3d}
   </section>
 
   <section class="contact">
-    <b>联系与复诊信息</b>
-    <p>科室 / 门诊电话：＿＿＿＿＿＿＿＿＿＿＿＿</p>
-    <p>门诊时间：＿＿＿＿＿＿＿＿＿＿＿＿</p>
-    <p>出院时请把内镜报告、病理报告、出院记录放在同一处保存，复诊时一并带来。</p>
+    <span class="contact-h">联系与复诊信息</span>
+    <p><b>24 小时紧急联系电话：</b><a href="tel:01087787701">010-8778-7701</a></p>
+    <p><b>门诊时间：</b>一般在周一上午；具体时间根据病理结果出具的时间安排。</p>
+    <p><b>复诊请带：</b>病理报告、出院记录（一般不需要带内镜报告）。</p>
+    <p><b>资料保存：</b>内镜报告、病理报告、出院记录请放在同一处妥善保存，方便日后复查。</p>
   </section>
 
 </main>

@@ -7,62 +7,65 @@
 <meta name="format-detection" content="telephone=no">
 <title>消化内镜 ESD 术后康复指导</title>
 <style>
-:root{--ink:#18212a;--sub:#5c6874;--line:#e8edf2;--bg:#f4f6f8;--brand:#0f766e;--brand-weak:#e6f4f1;--danger:#c0261f;--danger-weak:#fdecea;--r:16px}
+:root{--ink:#111;--sub:#5c5c5c;--line:#e2e2e2;--r:14px}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;padding-bottom:34px}
-.wrap{max-width:680px;margin:0 auto;padding:0 14px}
-.mast{background:linear-gradient(165deg,#127f76 0%,#0b5b56 62%,#084c48 100%);color:#fff;padding:26px 0 22px;border-radius:0 0 22px 22px;box-shadow:0 10px 26px -18px rgba(8,76,72,.9)}
-.kicker{font-size:12px;letter-spacing:.14em;opacity:.82;margin:0 0 8px}
-.mast h1{margin:0;font-size:24px;line-height:1.42;font-weight:700;letter-spacing:.01em}
-.lede{margin:12px 0 0;font-size:13.5px;line-height:1.72;color:#d7ece9}
-.lede strong{color:#fff;font-weight:600}
-.card{background:#fff;border-radius:var(--r);margin:14px 0;padding:2px 0 10px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 12px 28px -22px rgba(16,24,40,.5)}
-.card h2{display:flex;align-items:center;gap:10px;margin:0;padding:16px 16px 4px;font-size:17.5px;font-weight:700;letter-spacing:.01em}
-.num{flex:none;width:26px;height:26px;border-radius:9px;background:var(--brand-weak);color:var(--brand);font-size:13.5px;font-weight:800;display:flex;align-items:center;justify-content:center}
-.sect-sub{margin:14px 16px 2px;font-size:14px;font-weight:600;color:var(--brand);letter-spacing:.02em}
-.note{margin:4px 16px 6px;font-size:14px;line-height:1.72;color:var(--sub)}
-.item{display:flex;gap:11px;align-items:flex-start;margin:0;padding:8px 16px;font-size:15.5px;line-height:1.72;cursor:pointer}
-.item input{appearance:none;-webkit-appearance:none;flex:none;width:19px;height:19px;margin:4px 0 0;border:1.6px solid #cbd5df;border-radius:6px;background:#fff;position:relative;transition:background .12s,border-color .12s}
-.item input:checked{background:var(--brand);border-color:var(--brand)}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.78 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;padding-bottom:36px}
+.wrap{max-width:680px;margin:0 auto;padding:0 16px}
+.mast{background:#fff;border-bottom:2px solid #111;padding:24px 0 18px}
+.kicker{font-size:12px;letter-spacing:.18em;color:#7a7a7a;margin:0 0 9px;font-weight:600}
+.mast h1{margin:0;font-size:23px;line-height:1.42;font-weight:800;letter-spacing:.01em;color:#111}
+.lede{margin:11px 0 0;font-size:13.5px;line-height:1.7;color:#5c5c5c}
+.lede strong{color:#111;font-weight:700}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin:14px 0;padding:2px 0 10px}
+.card h2{display:flex;align-items:center;gap:9px;margin:0;padding:16px 16px 2px;font-size:17.5px;font-weight:800;letter-spacing:.01em}
+.num{flex:none;min-width:24px;height:24px;padding:0 3px;border-radius:6px;background:#111;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.sect-sub{margin:15px 16px 2px;font-size:14.5px;font-weight:700;color:#111}
+.note{margin:5px 16px 6px;font-size:14px;line-height:1.72;color:#5c5c5c}
+.item{display:flex;gap:11px;align-items:flex-start;margin:0;padding:8px 16px;font-size:15.5px;line-height:1.75;cursor:pointer}
+.item input{appearance:none;-webkit-appearance:none;flex:none;width:19px;height:19px;margin:4px 0 0;border:1.6px solid #111;border-radius:4px;background:#fff;position:relative;transition:background .12s}
+.item input:checked{background:#111}
 .item input:checked::after{content:"";position:absolute;left:6px;top:1.5px;width:5px;height:10px;border:2px solid #fff;border-top:0;border-left:0;transform:rotate(42deg)}
-.item input:checked+span{color:#93a1ae}
-.card.danger{border:1px solid #f6d5d2}
-.card.danger h2{color:var(--danger)}
-.card.danger .num{background:var(--danger-weak);color:var(--danger)}
-.card.danger .item input:checked{background:var(--danger);border-color:var(--danger)}
-.alert{margin:14px 0;padding:14px 15px;border-radius:14px;background:var(--danger-weak);border:1px solid #f6cfcb;color:#8f1c15}
-.alert b{display:block;font-size:14.5px;margin:0 0 5px}
-.alert p{margin:0;font-size:14px;line-height:1.75}
-.tl{list-style:none;position:relative;margin:10px 16px 6px;padding:0 0 0 20px;border-left:2px solid #e2e8ef}
+.item input:checked+span{color:#9a9a9a}
+.card.danger{background:#111;border-color:#111;color:#fff}
+.card.danger h2{color:#fff}
+.card.danger .num{background:#fff;color:#111}
+.card.danger .note{color:#bfbfbf}
+.card.danger .item input{border-color:#fff;background:#111}
+.card.danger .item input:checked{background:#fff;border-color:#fff}
+.card.danger .item input:checked::after{border-color:#111}
+.card.danger .item input:checked+span{color:#8f8f8f}
+.principle{margin:16px 0 8px;padding:18px;border-radius:var(--r);background:#111;color:#fff}
+.principle h3{margin:0 0 7px;font-size:12px;letter-spacing:.2em;opacity:.7;font-weight:600}
+.principle p{margin:0;font-size:16px;line-height:1.8;font-weight:600}
+.foot{margin:24px auto 10px;font-size:12.5px;line-height:1.85;color:#8a8a8a;text-align:center}
+.foot b{color:#5c5c5c;font-weight:600}
+.alert{margin:14px 0;padding:13px 15px;border:1px solid #111;border-left:6px solid #111;border-radius:10px;background:#f7f7f7}
+.alert b{display:block;font-size:14.5px;margin:0 0 5px;color:#111}
+.alert p{margin:0;font-size:14px;line-height:1.75;color:#333}
+.tl{list-style:none;position:relative;margin:10px 16px 6px;padding:0 0 0 20px;border-left:2px solid #dcdcdc}
 .tl li{position:relative;padding:7px 0}
-.tl li::before{content:"";position:absolute;left:-24px;top:14px;width:9px;height:9px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px var(--brand-weak)}
+.tl li::before{content:"";position:absolute;left:-24px;top:14px;width:9px;height:9px;border-radius:50%;background:#111;box-shadow:0 0 0 3px #fff}
 .tl b{display:block;font-size:15px;font-weight:700}
-.tl span{display:block;font-size:14px;line-height:1.7;color:var(--sub)}
-.tip{margin:12px 16px 8px;padding:11px 13px;border-radius:12px;background:#f7fafb;border:1px dashed #dbe3ea;font-size:14px;line-height:1.7;color:#43505c}
+.tl span{display:block;font-size:14px;line-height:1.7;color:#5c5c5c}
+.tip{margin:12px 16px 8px;padding:11px 13px;border-radius:10px;background:#f7f7f7;border:1px dashed #cfcfcf;font-size:14px;line-height:1.7;color:#3d3d3d}
 .stage{display:flex;gap:10px;padding:7px 16px;font-size:14.5px;line-height:1.7}
-.st-h{flex:none;width:58px;font-weight:700;color:var(--brand);font-size:14px;padding-top:1px}
-.st-b{color:#3c4854}
-.organ{margin:10px 16px;padding:11px 13px;border-radius:12px;background:#f8fafb;border:1px solid var(--line)}
-.organ h4{margin:0 0 4px;font-size:14.5px;color:var(--brand);font-weight:700}
-.organ ul{margin:0;padding-left:17px;font-size:14.5px;line-height:1.72;color:#3c4854}
+.st-h{flex:none;width:58px;font-weight:700;color:#111;font-size:14px;padding-top:1px}
+.st-b{color:#3d3d3d}
+.organ{margin:10px 16px;padding:11px 13px;border-radius:10px;background:#fafafa;border:1px solid var(--line)}
+.organ h4{margin:0 0 4px;font-size:14.5px;color:#111;font-weight:800}
+.organ ul{margin:0;padding-left:17px;font-size:14.5px;line-height:1.72;color:#3d3d3d}
 .organ li{margin:2px 0}
 details{margin:0 16px;border-top:1px solid var(--line);padding:2px 0}
 details:first-of-type{border-top:0}
-summary{list-style:none;cursor:pointer;padding:11px 24px 11px 0;font-size:15px;font-weight:600;position:relative}
+summary{list-style:none;cursor:pointer;padding:11px 24px 11px 0;font-size:15px;font-weight:700;position:relative}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";position:absolute;right:2px;top:7px;font-size:20px;font-weight:400;color:var(--brand);line-height:1.2}
+summary::after{content:"+";position:absolute;right:2px;top:7px;font-size:20px;font-weight:400;color:#111;line-height:1.2}
 details[open] summary::after{content:"–"}
-details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3c4854}
+details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3d3d3d}
 .contact{margin:14px 0;padding:15px 16px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
-.contact b{display:block;font-size:15px;margin:0 0 6px;color:var(--brand)}
-.contact p{margin:6px 0;font-size:14.5px;line-height:1.9;color:#3c4854}
-.principle{margin:16px 0 8px;padding:18px;border-radius:var(--r);background:linear-gradient(160deg,#0f766e,#0a5450);color:#fff;box-shadow:0 14px 30px -22px rgba(8,76,72,.9)}
-.principle h3{margin:0 0 6px;font-size:12px;letter-spacing:.16em;opacity:.85;font-weight:600}
-.principle p{margin:0;font-size:16px;line-height:1.8;font-weight:600}
-.foot{margin:22px auto 10px;font-size:12.5px;line-height:1.85;color:#8b97a3;text-align:center}
-.foot b{color:#6b7885;font-weight:600}
-@media (prefers-color-scheme:dark){body{background:#0f1418;color:#e6ebf0}.card{background:#18202a}.item input{background:#18202a;border-color:#455263}.note,.foot,.tl span{color:#8b97a3}.sect-sub,.st-h,.organ h4,.contact b,summary::after{color:#4fd1c0}.num{background:#123a37;color:#4fd1c0}.organ,.tip,.contact{background:#141c24;border-color:#2a3644}.stage .st-b,.organ ul,details p,.contact p{color:#c6d0d9}}
+.contact b{display:block;font-size:15px;margin:0 0 6px;color:#111}
+.contact p{margin:6px 0;font-size:14.5px;line-height:1.9;color:#3d3d3d}
 </style>
 </head>
 <body>
@@ -83,7 +86,7 @@ details p{margin:0 0 12px;font-size:14.5px;line-height:1.75;color:#3c4854}
   </section>
 
   <section class="card">
-    <h2><span class="num">⏱</span>恢复时间轴（一般情况）</h2>
+    <h2><span class="num">时</span>恢复时间轴（一般情况）</h2>
     <ol class="tl">
       <li><b>术后 0–24 小时</b><span>按医嘱禁食禁饮，卧床或减少活动；重点观察腹痛、体温和大便颜色。</span></li>
       <li><b>第 1–3 天</b><span>多数人可开始饮水、清流质，开始前需由医生确认没有出血；具体时间与部位、创面大小有关。</span></li>
